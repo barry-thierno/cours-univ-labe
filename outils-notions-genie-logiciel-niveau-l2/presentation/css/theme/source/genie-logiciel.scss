@@ -1,0 +1,33 @@
+.ti {
+  font-size: 10rem;
+  color: chocolate;
+}
+
+.reveal {
+  a {
+    :hover {
+      color: cadetblue;
+    }
+    color: cadetblue;
+  }
+  li {
+    font-size: 2rem;
+  }
+  h1 {
+    color: chocolate;
+    font-size: 4rem;
+  }
+  h2 {
+    color: darksalmon;
+    font-size: 2rem;
+  }
+  q {
+    font-size: 1.5rem;
+  }
+}
+// slide 2/2
+.save-illustration {
+  img {
+    width: 35rem;
+  }
+}
