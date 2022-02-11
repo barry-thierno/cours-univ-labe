@@ -1,101 +1,127 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>reveal.js</title>
 
-	<title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="dist/theme/genie-logiciel.css" />
 
-	<link rel="stylesheet" href="dist/reset.css" />
-	<link rel="stylesheet" href="dist/reveal.css" />
-	<link rel="stylesheet" href="dist/theme/black.css" />
-	<link rel="stylesheet" href="dist/theme/genie-logiciel.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css"
+    />
+  </head>
 
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css" />
-	<link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
-</head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <a href="https://revealjs.com">
+            <i class="ti ti-brand-github"></i>
+            <!-- <img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> -->
+          </a>
+          <h3>Outils de gestion de versions</h3>
+          <p>
+            <small>Par <a href="http://hakim.se">Thierno BARRY</a></small>
+          </p>
+        </section>
+        <section>
+          <h1>Programme</h1>
+          <ol>
+            <li>Gestionnaires de version</li>
+            <li>Les base de git</li>
+            <li>Gestion du repo locale</li>
+            <li>Gestion de branche</li>
+            <li>Gérer les repo distant</li>
+            <li>Découverte de github</li>
+            <li>Quelques outils graphiques</li>
+            <li>Gitflow</li>
+          </ol>
+        </section>
+        <section>
+          <section>
+            <h1>Gestionnaires de version</h1>
+          </section>
+          <section>
+            <h2>Qu’est gestionnaire de version?</h2>
+            <q
+              >Un logiciel de versioning, ou logiciel de gestion de version, est
+              un logiciel qui permet de conserver un historique des
+              modifications effectuées sur un projet afin de pouvoir rapidement
+              identifier les changements effectués et de revenir à une ancienne
+              version en cas de problème</q
+            >
+          </section>
+          <section>
+            <h2>Pourquoi un gestionnaire de version?</h2>
+            <div class="save-illustration">
+              <img src="./medias/think-bullet.png" alt="dev" />
+            </div>
+          </section>
+          <section>
+            <h2>Quels sont les risques de cette methode?</h2>
+            <div class="save-illustration">
+              <img src="./medias/dev-solo.png" alt="dev" />
+              <ul>
+                <li
+                  class="fragment highlight-red animated move-to"
+                  data-animated-move-to-top="-400px"
+                >
+                  Perte de support
+                </li>
+                <li
+                  class="fragment highlight-red animated move-to"
+                  data-animated-move-to-top="-400px"
+                >
+                  Vol support
+                </li>
+                <li
+                  class="fragment highlight-red animated move-to"
+                  data-animated-move-to-top="-400px"
+                >
+                  Support corrompu
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section
+          data-background-iframe="https://codesandbox.io/s/new"
+        ></section>
+      </div>
+    </div>
 
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<a href="https://revealjs.com">
-					<i class="ti ti-brand-github"></i>
-					<!-- <img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> -->
-				</a>
-				<h3>Outils de gestion de versions</h3>
-				<p>
-					<small>Par <a href="http://hakim.se">Thierno BARRY</a></small>
-				</p>
-			</section>
-			<section>
-				<h1>Programme</h1>
-				<ol>
-					<li>Gestionnaires de version</li>
-					<li>Les base de git</li>
-					<li>Gestion du repo locale</li>
-					<li>Gestion de branche</li>
-					<li>Gérer les repo distant</li>
-					<li>Découverte de github</li>
-					<li>Quelques outils graphiques</li>
-					<li>Gitflow</li>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				</ol>
-			</section>
-			<section>
-				<section>
-
-					<h1>Gestionnaires de version</h1>
-				</section>
-				<section>
-					<h2>Qu’est gestionnaire de version?</h2>
-					<q>Un logiciel de versioning, ou logiciel de gestion de version, est un logiciel qui permet de
-						conserver un historique des modifications effectuées sur un projet afin de pouvoir rapidement
-						identifier les changements effectués et de revenir à une ancienne version en cas de problème</q>
-				</section>
-				<section>
-					<h2>Pourquoi un gestionnaire de version?</h2>
-					<div class="save-illustration">
-						<img src="./medias/dev-solo.png" alt="dev">
-					</div>
-				</section>
-				<section>
-					<h2>Quels sont les risques de cette methode?</h2>
-					<div class="save-illustration">
-						<img  src="./medias/dev-solo.png" alt="dev">
-						<ul>
-							<li class="fragment highlight-red animated move-to" data-animated-move-to-top="-400px">Perte de support </li>
-							<li class="fragment highlight-red animated move-to" data-animated-move-to-top="-400px">Vol support </li>
-							<li class="fragment highlight-red animated move-to" data-animated-move-to-top="-400px">Support corrompu </li>
-						</ul>
-					</div>
-				</section>
-			</section>
-			<section data-background-iframe="https://codesandbox.io/s/new"></section>
-		</div>
-	</div>
-
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-			dependencies: [
-            // Other plugins
-            {src: 'node_modules/revealjs-animated/dist/revealjs-animated.js', async: true}
-        ]
-		});
-	</script>
-</body>
-
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        dependencies: [
+          // Other plugins
+          {
+            src: "node_modules/revealjs-animated/dist/revealjs-animated.js",
+            async: true,
+          },
+        ],
+      });
+    </script>
+  </body>
 </html>

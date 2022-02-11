@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>GL Labé</title>
+
+    <link rel="stylesheet" href="../dist/reset.css" />
+    <link rel="stylesheet" href="../dist/reveal.css" />
+    <link rel="stylesheet" href="../dist/theme/black.css" />
+    <link rel="stylesheet" href="../dist/theme/genie-logiciel.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic Coding">
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <a href="https://revealjs.com">
+                    <i class="ti ti-brand-github"></i>
+                    <!-- <img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> -->
+                </a>
+                <h3>Outils de gestion de versions</h3>
+                <p>
+                    <small>Par <a href="http://hakim.se">Thierno BARRY</a></small>
+                </p>
+            </section>
+            <section>
+                <h1>> Programme</h1>
+                <ul>
+                    <li>Historique</li>
+                    <li>Logiciel</li>
+                    <li>Architectures applicatives</li>
+                    <li>Architecure d'intégration</li>
+                </ul>
+            </section>
+            <!-- Historique du génie logiciel -->
+            <section>
+                <section>
+                    <h1>Historique du génie logiciel</h1>
+                </section>
+                <section>
+                    <h2>Les années 50</h2>
+                    <ul>
+                        <li>Langages de haut niveau (C, FORTRAN, COBOL,...)</li>
+                        <li>Mort annoncée de l'assembleur</li>
+                        <li>Euphorie & Optimisme</li>
+                        <li>Programmation automatique</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Les années 60</h2>
+                    <ul>
+                        <li>Adoption en masse de l'informatique</li>
+                        <li>Gestion des entreprises</li>
+                        <li>Procédés industriels</li>
+                        <ul>
+                            <li>Chimie</li>
+                            <li>Nucléaire</li>
+                            <li>Productique</li>
+                        </ul>
+                        <li>Systèmes embarqués</li>
+                        <ul>
+                            <li>Spatial</li>
+                            <li>Nucléaire</li>
+                            <li>Communication</li>
+                        </ul>
+                    </ul>
+                    <li>Naissance des société de service</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>La crise du logiciel</h2>
+                    <ul>
+                        <li>Pas demaîtrise des grands projets</li>
+                        <li>Dépassement budget et delais facteur 4</li>
+                        <li>Problèmes de communication dans les équipes</li>
+                        <li>Logiciel produit non conforme</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>C'est la crise!!</h2>
+                    <div class="save-illustration">
+                        <img src="../medias/clip-problem-solving.png" alt="dev" />
+                    </div>
+                </section>
+                <section>
+                    <h2>Naissance du genie logiciel</h2>
+                    <ul>
+                        <li>Conférence de l'Otan 1968 à Garmisch
+                            <ul>
+                                <li>Proposé par <strong>L. Bauer</strong> </li>
+                                <li>Les difficultés de la production de logiciel </li>
+                                <li>Intitulé: <em>Working Conference on Software Engineering</em> </li>
+                            </ul>
+                        </li>
+                        <li>Conférence de l'Otan 1969 à Rome</li>
+                        <li>Pas de solution immédiate</li>
+                        <li>Naissance du génie logiciel
+                            <ul>
+                                <li>Identification grandes lignes</li>
+                                <li>Définitions des objectifs</li>
+                            </ul>
+                        </li>
+                        <li>Naissance outils et méthode</li>
+                    </ul>
+                </section>
+            </section>
+            <!-- End Historique du génie logiciel -->
+            <!-- Begin Genie Logiciel -->
+            <section>
+                <section>
+                    <h1>Genie Logiciel</h1>
+                </section>
+                <section>
+                    <h2>C'est quoi le genie logiciel?</h2>
+                    <div><q>Le génie logiciel s’attache à définir et à appliquer des méthodes, des
+                            <strong>outils</strong> et des
+                            pratiques propres à assurer la production de logiciel répondant à des besoins spécifiés et
+                            respectant certains critères de <strong>qualité</strong> eux-mêmes spécifiés, ainsi que des
+                            <strong>contraintes économiques.</strong>
+                        </q></div>
+                </section>
+                <section>
+                    <h2>Qualité logiciel</h2>
+                    <ul>
+                        <li>Une des raison à l'origne du genie logiciel </li>
+                        <li>Une appréciation basée sur des indicateurs</li>
+                        <li>Dépend entièrement de sa construction</li>
+                        <li>Processus utilisés pour son développement</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Indicateurs de qualité <strong>(ISO ISO/IEC 25010:2011) </strong></h2>
+                    <ul>
+                        <li>La capacité fonctionnelle</li>
+                        <li>La facilité d'utilisation</li>
+                        <li>La fiabilité</li>
+                        <li>La performance</li>
+                        <li>La maintenabilité</li>
+                        <li>La Portabilité</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Enjeux pour les organisations</h2>
+                    <ul>
+                        <li>Côuts supplémentaires</li>
+                        <li>Perte de chiffre d'affaire</li>
+                        <li>Arrêt d'activités</li>
+                        <li>Image écornée</li>
+                        <li>Mort d'hommes &#128546;</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Quelques gros bugs dans l'histoire</h2>
+                    <ul>
+                        <li>Le Blackout de Facebook
+                            <ul>
+                                <li>Cours Facebook plonge de 4.89%</li>
+                                <li>Perte de <strong>6 Md$ &#129296;</strong> </li>
+                            </ul>
+                        </li>
+                        <li>Ariane 5 - 1995
+                            <ul>
+                                <li>Bug informatique de la fusée ariane 5</li>
+                                <li>Explosion 36s après lancement</li>
+                                <li>500 000 millions de dollars qui s’envolent en fumée &#128563;</li>
+                            </ul>
+                        </li>
+                        <li>Toyota – 2009
+                            <ul>
+                                <li>200 à 400 morts et 2,3 milliards d’euros &#128561;</li>
+                                <li>La Lexus ES350 a tué nombre de ses propriétaires</li>
+                                <li>Enclenche l’accélération jusqu’à 150 km/h</li>
+                                <li>Désactive la pédale de frein</li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </section>
+                <section data-background-iframe="https://www.rocketprojet.com/29-bugs-informatiques-catastrophe/">
+                </section>
+                <section>
+                    <h2>Quelques annecdotes personnelles</h2>
+                    <ul>
+                        <li>Le bug Amazon à 1M€ AXA &#129297;</li>
+                        <li>La fermeture d'une usine de production en Chine de Decathlon &#129300;</li>
+                    </ul>
+                </section>
+            </section>
+            <!-- End Genie Logiciel -->
+            <!-- Begin Le cycle de vie d’un logiciel -->
+            <section>
+                <section>
+                    <h1>Le cycle de vie d’un logiciel</h1>
+                </section>
+            </section>
+            <!-- End Le cycle de vie d’un logiciel -->
+            <!-- Begin Architecture logicielle-->
+            <section>
+                <section>
+                    <h1>Architecture logicielle</h1>
+                </section>
+                <section>
+                    <h2>Principes d’architecture</h2>
+                    <div class="save-illustration">
+                        <img src="../medias/Fred-Brooks .jpg" alt="dev" />
+                    </div>
+                    <q>Le facteur déterminant du succès ou de l’échec d’un projet est l’unité conceptuelle de son architecture</q>
+                    <div>
+                        <strong>The Mythical Man-Month (Le mythe de l’homme-mois) - 1975</strong>
+                    </div>
+                </section>
+                <section>
+                    <h2>Principes d’architecture</h2>
+                    <ul>
+                        <li>Répresentation abstraite</li>
+                        <li>Comportement d'un système</li>
+                        <li>Sous composant (décomposition)</li>
+                        <li>Comprehension système complexe (diviser pour mieux régner)</li>
+                        <li>Decouper le travail
+                            <ul>
+                                <li>Dev Frontend</li>
+                                <li>Dev Backend</li>
+                                <li>DBA</li>
+                                <li>...</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Catégories d'architecture</h2>
+                    <ul>
+                        <li>Architecture applicative</li>
+                        <li>Architecture d'intégration</li>
+                    </ul>
+                </section>
+            </section>
+            <!-- End Architecture logicielle-->
+            <!-- Begin Architecture applicative -->
+            <section>
+                <section>
+                    <h1>Architecture applicative</h1>
+                </section>
+                <section>
+                    <h2>Les monolithe</h2>
+                </section>
+            </section>
+            <section data-background-iframe="https://codesandbox.io/s/new"></section>
+        </div>
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            dependencies: [
+                // Other plugins
+                {
+                    src: "node_modules/revealjs-animated/dist/revealjs-animated.js",
+                    async: true,
+                },
+            ],
+        });
+    </script>
+</body>
+
+</html>
