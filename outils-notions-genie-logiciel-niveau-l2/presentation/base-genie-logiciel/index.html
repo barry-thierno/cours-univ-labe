@@ -26,13 +26,13 @@
                     <i class="ti ti-brand-github"></i>
                     <!-- <img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> -->
                 </a>
-                <h3>Outils de gestion de versions</h3>
+                <h3>Outils du génie logiciel</h3>
                 <p>
-                    <small>Par <a href="http://hakim.se">Thierno BARRY</a></small>
+                    <small>Par Thierno BARRY</small>
                 </p>
             </section>
             <section>
-                <h1>> Programme</h1>
+                <h1> Programme</h1>
                 <ul>
                     <li>Historique</li>
                     <li>Logiciel</li>
@@ -91,7 +91,7 @@
                     </div>
                 </section>
                 <section>
-                    <h2>Naissance du genie logiciel</h2>
+                    <h2>Naissance du génie logiciel</h2>
                     <ul>
                         <li>Conférence de l'Otan 1968 à Garmisch
                             <ul>
@@ -116,10 +116,10 @@
             <!-- Begin Genie Logiciel -->
             <section>
                 <section>
-                    <h1>Genie Logiciel</h1>
+                    <h1>Génie Logiciel</h1>
                 </section>
                 <section>
-                    <h2>C'est quoi le genie logiciel?</h2>
+                    <h2>C'est quoi le génie logiciel?</h2>
                     <div><q>Le génie logiciel s’attache à définir et à appliquer des méthodes, des
                             <strong>outils</strong> et des
                             pratiques propres à assurer la production de logiciel répondant à des besoins spécifiés et
@@ -130,27 +130,42 @@
                 <section>
                     <h2>Qualité logiciel</h2>
                     <ul>
-                        <li>Une des raison à l'origne du genie logiciel </li>
+                        <li>Une des raison à l'origne du génie logiciel </li>
                         <li>Une appréciation basée sur des indicateurs</li>
-                        <li>Dépend entièrement de sa construction</li>
-                        <li>Processus utilisés pour son développement</li>
+                        <li>Dépend:
+                            <ul>
+                                <li>Entièrement de sa construction</li>
+                                <li>Processus utilisés pour son développement</li>
+                            </ul>
+                        </li>
                     </ul>
                 </section>
                 <section>
                     <h2>Indicateurs de qualité <strong>(ISO ISO/IEC 25010:2011) </strong></h2>
                     <ul>
-                        <li>La capacité fonctionnelle</li>
-                        <li>La facilité d'utilisation</li>
-                        <li>La fiabilité</li>
-                        <li>La performance</li>
-                        <li>La maintenabilité</li>
-                        <li>La Portabilité</li>
+                        <li>Capacité fonctionnelle</li>
+                        <li>Facilité d'utilisation</li>
+                        <li>Fiabilité</li>
+                        <li>Performance</li>
+                        <li>Maintenabilité</li>
+                        <li>Portabilité</li>
                     </ul>
                 </section>
                 <section>
                     <h2>Enjeux pour les organisations</h2>
                     <ul>
-                        <li>Côuts supplémentaires</li>
+                        <li>Investissement de millions</li>
+                        <li>Acquérir de nouveaux clients & marché</li>
+                        <li>Réduire côut de production</li>
+                        <li>Répondre très vite aux nouvelles demandes</li>
+                        <li>Time to market</li>
+                        <li>Plus agile</li>
+                    </ul>
+
+                </section>
+                <section>
+                    <h2>Enjeux pour les organisations</h2>
+                    <ul>
                         <li>Perte de chiffre d'affaire</li>
                         <li>Arrêt d'activités</li>
                         <li>Image écornée</li>
@@ -212,7 +227,8 @@
                     <div class="save-illustration">
                         <img src="../medias/Fred-Brooks .jpg" alt="dev" />
                     </div>
-                    <q>Le facteur déterminant du succès ou de l’échec d’un projet est l’unité conceptuelle de son architecture</q>
+                    <q>Le facteur déterminant du succès ou de l’échec d’un projet est l’unité conceptuelle de son
+                        architecture</q>
                     <div>
                         <strong>The Mythical Man-Month (Le mythe de l’homme-mois) - 1975</strong>
                     </div>
@@ -249,8 +265,115 @@
                     <h1>Architecture applicative</h1>
                 </section>
                 <section>
-                    <h2>Les monolithe</h2>
+                    <h2>Flat structure (structure plate)</h2>
+                    <ul>
+                        <li>Big ball of MUD</li>
+                        <li>Non structuré </li>
+                        <li>Rempli de dépendances cachées entre les parties</li>
+                        <li>Avec beaucoup de données</li>
+                        <li>Duplication de code </li>
+                        <li>Une identification peu claire des couches et des problèmes​</li>
+                        <li>Code spaghetti</li>
+                    </ul>
                 </section>
+                <section>
+                    <h2>Big bull of mud/Code spaghetti</h2>
+                    <div class="save-illustration">
+                        <img src="../medias/bug-bull-mud.png" alt="dev" />
+                    </div>
+                </section>
+                <section>
+                    <h2>Régression!!!</h2>
+                    <div class="save-illustration">
+                        <img src="../medias/regression.gif" alt="dev" />
+                    </div>
+                </section>
+
+                <section>
+                    <h1>Architecture multicouches</h1>
+                </section>
+                <section>
+                    <h2>Notion de couche (layer)</h2>
+                    <ul>
+                        <li>Faire un découpage logique</li>
+                        <li>Sous-sytèmes à part entière</li>
+                        <li>Isoler les responsablités</li>
+                        <li>Principe: <q>Separation of concern</q></li>
+                        <li>Casser le couplage</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Presentation Layer (couche présentation) </h2>
+                    <ul>
+                        <li>Comment l'information est presentée</li>
+                        <li>Expose un client graphique (GUI)
+                            <ul>
+                                <li>Console: client SSH, Telnet,...</li>
+                                <li>Lourd: Outlook, Skype,...</li>
+                                <li>Léger: Gmail, Facebook</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Business layer (couche business)</h2>
+                    <ul>
+                        <li>Noyeau de l'application</li>
+                        <li>Règles qui régissent processus métiers</li>
+                        <li>Change peu</li>
+                        <li>Agnostique à la technologie</li>
+                        <li>Exemples:
+                            <ul>
+                                <li>Les règles de calculs</li>
+                                <li>Exécution de commandes</li>
+                                <li>La prise de décision logique</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Data Layer (couche d'accès à la donnée)</h2>
+                    <ul>
+                        <li>Interace de connexion aux sources de stockage</li>
+                        <li>
+                            <ul>
+                                <li>Base de données rélationnelle</li>
+                                <li>Base de données NoSQL</li>
+                                <li>Fichiers (txt, csv,...)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Schéma architecture multicouhes</h2>
+                    <div class="save-illustration">
+                        <img src="../medias/bug-bull-mud.png" alt="dev" />
+                    </div>
+                </section>
+                <section>
+                    <h2>Avantages de l'architecture multicouches</h2>
+                    <ul>
+                        <li>Découplage</li>
+                        <li>Moins de risque de régréssion</li>
+                        <li>Lisibilité & compréhension</li>
+                        <li>Modularité
+                            <ul>
+                                <li>Changé de fournisseur de BD</li>
+                                <li>Changé de technologie front</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Pattern MVC</h1>
+                </section>
+                <section>
+                    <h2>Qu'est-ce qu'un design pattern?</h2>
+                    <q>Les patrons de conception sont une boîte à outils
+                        permettant de résoudre des problèmes classiques de la conception de logiciels.</q>
+                    <strong>refactoring.guru</strong>
+                </section>
+
             </section>
             <section data-background-iframe="https://codesandbox.io/s/new"></section>
         </div>
