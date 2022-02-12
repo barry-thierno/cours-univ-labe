@@ -27,9 +27,17 @@
                     <!-- <img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> -->
                 </a>
                 <h3>Outils du génie logiciel</h3>
-                <p>
-                    <small>Par Thierno BARRY</small>
-                </p>
+                <p> Niveau 1 </p>
+            </section>
+            <section>
+                <section>
+                    <div class="illustration-bg">
+                        <img src="../medias/profil.png" alt="dev" />
+                    </div>
+                </section>
+                <section data-background-iframe="https://axaguildev.github.io/design-system/get-started/contributors/">
+                </section>
+
             </section>
             <section>
                 <h1> Programme</h1>
@@ -215,6 +223,19 @@
                 <section>
                     <h1>Le cycle de vie d’un logiciel</h1>
                 </section>
+                <section>
+                    <h2>Les étapes du cycle de vie</h2>
+                    <ul>
+                        <li>Définition des objectifs</li>
+                        <li>Analyse des besoins et faisabilité</li>
+                        <li>Conception</li>
+                        <li>Implémentation</li>
+                        <li>Test</li>
+                        <li>Mise en production</li>
+                        <li>Run (maintenance)</li>
+
+                    </ul>
+                </section>
             </section>
             <!-- End Le cycle de vie d’un logiciel -->
             <!-- Begin Architecture logicielle-->
@@ -223,7 +244,7 @@
                     <h1>Architecture logicielle</h1>
                 </section>
                 <section>
-                    <h2>Principes d’architecture</h2>
+                    <h2>Fred-Brooks</h2>
                     <div class="save-illustration">
                         <img src="../medias/Fred-Brooks .jpg" alt="dev" />
                     </div>
@@ -346,8 +367,8 @@
                 </section>
                 <section>
                     <h2>Schéma architecture multicouhes</h2>
-                    <div class="save-illustration">
-                        <img src="../medias/bug-bull-mud.png" alt="dev" />
+                    <div class="illustration-bg">
+                        <img src="../medias/layer-architecture.png" alt="dev" />
                     </div>
                 </section>
                 <section>
@@ -375,43 +396,333 @@
                 </section>
 
                 <section>
-                    <h2>3 Tiers!!!</h2>
-                    <div class="save-illustration">
-                        <img src="../medias/3-tiers.png" alt="dev" />
-                    </div>
-                </section>
-
-                <section>
-                    <h2>3 Tiers!!!</h2>
-                    <div class="save-illustration">
-                        <img src="../medias/3-tiers-1.png" alt="dev" />
-                    </div>
-                </section>
-
-                <section>
-                    <h2>3 Tiers!!!</h2>
-                    <div class="save-illustration">
-                        <img src="../medias/layer-architecture.png" alt="dev" />
-                    </div>
-                </section>
-
-
-                <section>
-                    <h2>3 Tiers!!!</h2>
-                    <div class="save-illustration">
+                    <h2>Modèle Vue Controller(MVC) Pattern</h2>
+                    <div class="illustration-bg">
                         <img src="../medias/mvc-pattern.png" alt="dev" />
                     </div>
                 </section>
                 <section>
-                    <h2>3 Tiers!!!</h2>
+                    <h2>Limites l'architecture multicouhes</h2>
+                    <ul>
+                        <li>C'est une séparation logique</li>
+                        <li>Un seul environnement d'execution: <strong>MONOLITHE</strong></li>
+                        <li>Gestion des accès multi-canaux (mobile, web)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Architecture n-tier</h1>
+                </section>
+                <section>
+                    <h2>Notion de tiers</h2>
+                    <ul>
+                        <li>Tier: <i>Environnement d'exécution contenant une couche logique.</i></li>
+                        <li>Aller plus loin dans le découplage</li>
+                        <li>Deploiement physique par couche </li>
+                        <li>Garanti indépendance forte entre les couches logiques</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Architecture 3-tier</h2>
+                    <ul>
+                        <li>Emerge à partir des années 90</li>
+                        <li>Composé:
+                            <ul>
+                                <li>Tier client (client lourd, léger)</li>
+                                <li>Middle-tier (logique métier)</li>
+                                <li>Serveur de base de données</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Schéma Architecture 3-tier</h2>
+                    <div class="illustration-bg">
+                        <img src="../medias/3-tiers.png" alt="dev" />
+                    </div>
+                </section>
+                <section>
+                    <h2>Qu'en est-il des accès multi-canaux?</h2>
                     <div class="save-illustration">
-                        <img src="../medias/api-design.png" alt="dev" />
+                        <img src="../medias/undraw_questions_re_1fy7.svg" alt="dev" />
                     </div>
                 </section>
 
+                <section>
+                    <h2>Schéma 3-Tiers multi accès</h2>
+                    <div class="illustration-bg">
+                        <img src="../medias/3-tiers-1.png" alt="dev" />
+                    </div>
+                </section>
+                <section>
+                    <h2>Client lourd</h2>
+                    <ul>
+                        <li>Logiciel destiné à être installé localement </li>
+                        <li>Possède un setup</li>
+                        <li>Skype, Outlook</li>
+                        <li>Difficultés
+                            <ul>
+                                <li>Gestion des plateformes(linux, windows, mac,...)</li>
+                                <li>Les versions de système d'exploitation</li>
+                                <li>Les mises à jours</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Client léger</h2>
+                    <ul>
+                        <li>S'exécute dans un navigateur Web</li>
+                        <li>Exemple: Gmail, Facebook</li>
+                        <li>Navigateur:
+                            <ul>
+                                <li>Implémentation standard des règles W3C</li>
+                                <li>Gère problèmes de compatibilité</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </section>
+                <section>
+                    <h1>Zoom sur le mobile</h1>
+                    <ul>
+                        <li>Marché à fort potentiel</li>
+                        <li>Croissance exponentielle</li>
+                        <li>Quelques chiffres rapport digital 2021 de <strong>We are Social & Hootsuite</strong>
+                            <ul>
+                                <li>Nombre d'utilisateur: 5, 27Md</li>
+                                <li>67% de la population mondiale</li>
+                                <li><strong>7h/jour</strong> sur le web &#128562;</li>
+
+                            </ul>
+                        <li>En Guinée
+                            <ul>
+                                <li>MPTEN</li>
+                                <li>~6M d'abonnés internet ~14M téléphonie</li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>MPTEN: (Ministère des Postes,Télécommunications et de l'Economie Numérique)</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h2>développement mobile</h2>
+                    <ul>
+                        <li>Des contraites drastique:
+                            <ul>
+                                <li>Résolution d'écran</li>
+                                <li>Bande passante</li>
+                                <li>Déploiement via les stores</li>
+                            </ul>
+                        </li>
+                        <li>Deux choix d'architecture:
+                            <ul>
+                                <li>Android - Google</li>
+                                <li>iOs - Apple</li>
+                                <li>développement coûteux</li>
+                                <li>Faire un choix</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>se couper le bras droit ou le gauche?</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h1>Modèles développement mobile</h1>
+                </section>
+                <section>
+                    <h2>Développement natif</h2>
+                    <ul>
+                        <li>On choisit son camp</li>
+                        <li>Décision dictée par le marché</li>
+                        <li>Android:Java/kotlin </li>
+                        <li>iOS: Objective C/swift</li>
+                        <li>Avantage:
+                            <ul>
+                                <li>Performante</li>
+                                <li>Accès aux capeurs: GPS, Caméra, Gyroscope</li>
+                                <li>Meilleure ergonomie</li>
+                                <li>Fonctionne hors-ligne (offline)</li>
+                            </ul>
+                        </li>
+                        <li>Inconvenient: côut</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Les applications Web</h2>
+
+                </section>
 
             </section>
-            <section data-background-iframe="https://codesandbox.io/s/new"></section>
+            <section>
+                <section>
+                    <h1>Bases de l'architecture d'intégration</h1>
+                </section>
+                <section>
+                    <h1>Notion d'API</h1>
+                    <ul>
+                        <li>Application Programming Interface</li>
+                        <li>Un moyen de faire dialoguer des applications</li>
+                        <li>Producteur de service</li>
+                        <li>Consommateur de service</li>
+                        <li>Interface de programmation
+                            <ul>
+                                <li>Accès services tiers</li>
+                                <li>Données/fonctionnalités</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Mon service de location de Taxi</h2>
+                    <div class="illustration-bg">
+                        <img src="../medias/api-example.png" alt="dev" />
+                    </div>
+                    <aside class="notes">
+                        <ul>
+                            <li>Les consommateurs de ces services n’ont pas à se soucier de comment Google fait pour
+                                déterminer la localisation ou comment Orange effectue ses paiements car ce sont les
+                                fournisseurs respectifs de ces services qui s’en occupent.
+
+                            </li>
+                            <li> Cela permet aux développeurs d’ajouter des fonctionnalités dans une application grâce à
+                                des services déjà développés par d’autres entreprises.
+                            </li>
+                            <li> L’objectif en faisant recours à ces
+                                API est de ne pas avoir à réinventer la roue et de récréer des applications comme Google
+                                Maps ou Orange Money et ainsi économiser du temps et de l’argent.
+                                Les API représentent un enjeu financier majeur puisque les clients payent pour utiliser
+                                leurs
+                                applications . Ce qui veut dire que créer des services et les mettre à disposition via
+                                des API
+                                ouvrent des opportunités business. L’API n’est pas juste une solution technique, c'est
+                                un
+                                produit qui peut générer des sources de revenus pour les organisations qui les mettent
+                                en
+                                place.</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h2>API REST</h2>
+                    <ul>
+                        <li>Respecte les standards du web</li>
+                        <li>Architecture logicielle basée sur le HTTP</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Notions HTTP</h2>
+                    <ul>
+                        <li>Notion de ressource</li>
+                        <li>URI</li>
+                        <li>URL</li>
+                        <li>Les en-têtes</li>
+                        <li>Verbe HTTP:
+                            <ul>
+                                <li>GET</li>
+                                <li>POST</li>
+                                <li>PUT/PATCH</li>
+                                <li>DELETE</li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>L’'URI (Unifrom Resource Identifier ) identifie une ressource.</li>
+                            <li>Une URL comprend, en plus de l'URI, des informations sur la
+                                manière d'accéder à la ressource, comme le protocole à utiliser (http, ftp, ...)</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Exemple de l'API gestion de notes des étudiants</h2>
+                    <ul>
+                        <li>Définit les resources:
+                            <ul>
+                                <li>Etudiants => matricule</li>
+                                <li>Notes => cours</li>
+                            </ul>
+                        <li>URI:
+                            <ul>
+                                <li> <em>api/etudiants</em> </li>
+                                <li> <em>api/etudiants/1052478963</em> </li>
+                                <li> <em>api/etudiants/1052478963/notes</em></li>
+                                <li> <em>api/etudiants/1052478963/cours/3/notes</em></li>
+                            </ul>
+
+                        </li>
+                        <li>URL:
+                            <ul>
+                                <li> <em>https://univ-labe.edu.gn/api/etudiants</em> </li>
+                                <li> <em>https://univ-labe.edu.gn/api/etudiants/1052478963</em> </li>
+                            </ul>
+                        </li>
+
+                        </li>
+                    </ul>
+                </section>
+                <section data-background-iframe="https://www.restapitutorial.com/httpstatuscodes.html"></section>
+                <section>
+                    <h2>Format d'échange(JSON) </h2>
+                    <ul>
+                        <li>JSON(Javascript Object Notation)</li>
+                        <li>Léger</li>
+                        <li>Le plus utilisé</li>
+                        <li>Il existe aussi le XML</li>
+                        <li>Lourd et verbeux</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Exemple de JSON</h2>
+                    <pre class="javascript">
+                        <code> 
+                    {
+                        "id": 0
+                        "nom": "Camara",
+                        "prenom": "Aly",
+                        "matricule": "1052478963",
+                        "cours": "Génie logiciel",
+                        "note": 8.5
+                    }
+                    </code></pre>
+                </section>
+                <section>
+                    <h2>Produire une description d'API</h2>
+                    <ul>
+                        <li>Décrire API:
+                            <ul>
+                                <li> Entrées attendues </li>
+                                <li>Sorties à générer </li>
+                                <li>Autorisation requise </li>
+                                <li>... </li>
+                            </ul>
+                        <li>Constitue le contrat</li>
+                        <li>Pêut être definit avec OpenAPI</li>
+                        <li>Automatique</li>
+                        </li>
+                    </ul>
+
+                </section>
+                <section>
+                    <h2>Architecture orientée service</h2>
+                    <div class="illustration-bg">
+                        <img src="../medias/api-design.png" alt="dev" />
+                    </div>
+                </section>
+            </section>
+            <section>
+                <h1>Aller plus loin</h1>
+            </section>
         </div>
     </div>
 
