@@ -23,7 +23,7 @@
         <div class="slides">
             <section>
                 <a href="https://revealjs.com">
-                    <i class="ti ti-brand-github"></i>
+                    <i class="ti ti-affiliate"></i>
                     <!-- <img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> -->
                 </a>
                 <h3>Outils du génie logiciel</h3>
@@ -45,8 +45,32 @@
                     <li>Historique</li>
                     <li>Logiciel</li>
                     <li>Architectures applicatives</li>
-                    <li>Architecure d'intégration</li>
+                    <li>Architecures d'intégration</li>
                 </ul>
+            </section>
+            <section>
+                <h2>Le Module</h2>
+                <ul>
+                    <li class="fragment fade-up">Bases du génie logiciel</li>
+                    <li class="fragment fade-up">GIT</li>
+                    <li class="fragment fade-up">Bases du Développement Web</li>
+                    <li class="fragment fade-up">Un projet annuel</li>
+                    <li class="fragment fade-up">Fonder une base solide</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>SRP( single responsablités)</li>
+                        <li>OCP(Overture fermeture)</li>
+                        <li>LSP (Substitution de Liskov)</li>
+                        <li>Ségregation interface ISP</li>
+                        <li>IOC (inversion de controlle)</li>
+                        <li>DDD</li>
+                        <li>TDD</li>
+                        <li>Architecture HEXAGONALE</li>
+                        <li>Micro service</li>
+
+                    </ul>
+                </aside>
             </section>
             <!-- Historique du génie logiciel -->
             <section>
@@ -56,68 +80,85 @@
                 <section>
                     <h2>Les années 50</h2>
                     <ul>
-                        <li>Langages de haut niveau (C, FORTRAN, COBOL,...)</li>
-                        <li>Mort annoncée de l'assembleur</li>
-                        <li>Euphorie & Optimisme</li>
-                        <li>Programmation automatique</li>
+                        <li class="fragment fade-up">Langages de haut niveau (FORTRAN, COBOL,...)</li>
+                        <li class="fragment fade-up">Mort annoncée de l'assembleur</li>
+                        <li class="fragment fade-up">Euphorie & Optimisme</li>
+                        <li class="fragment fade-up">Programmation automatique</li>
                     </ul>
+                </section>
+                <section>
+                    <h2>Code Assembleur</h2>
+                    <div class="save-illustration">
+                        <img src="../medias/Apple_II_Monitor.png" alt="dev" />
+                    </div>
                 </section>
                 <section>
                     <h2>Les années 60</h2>
                     <ul>
-                        <li>Adoption en masse de l'informatique</li>
-                        <li>Gestion des entreprises</li>
-                        <li>Procédés industriels</li>
+                        <li class="fragment fade-up">Adoption en masse de l'informatique</li>
+                        <li class="fragment fade-up">Gestion des entreprises</li>
+                        <li class="fragment fade-up">Procédés industriels</li>
                         <ul>
-                            <li>Chimie</li>
-                            <li>Nucléaire</li>
-                            <li>Productique</li>
+                            <li class="fragment fade-up">Chimie</li>
+                            <li class="fragment fade-up">Productique</li>
                         </ul>
-                        <li>Systèmes embarqués</li>
+                        <li class="fragment fade-up">Systèmes embarqués</li>
                         <ul>
-                            <li>Spatial</li>
-                            <li>Nucléaire</li>
-                            <li>Communication</li>
+                            <li class="fragment fade-up">Spatial</li>
+                            <li class="fragment fade-up">Nucléaire</li>
+                            <li class="fragment fade-up">Communication</li>
                         </ul>
                     </ul>
-                    <li>Naissance des société de service</li>
+                    <li class="fragment fade-up">Naissance des sociétés de service</li>
                     </ul>
                 </section>
                 <section>
                     <h2>La crise du logiciel</h2>
                     <ul>
-                        <li>Pas demaîtrise des grands projets</li>
-                        <li>Dépassement budget et delais facteur 4</li>
-                        <li>Problèmes de communication dans les équipes</li>
-                        <li>Logiciel produit non conforme</li>
+                        <li class="fragment fade-up">Pas de maîtrise des grands projets</li>
+                        <li class="fragment fade-up">Dépassement budget et delais facteur 4</li>
+                        <li class="fragment fade-up">Problèmes de communication dans les équipes</li>
+                        <li class="fragment fade-up">Logiciel produit non conforme</li>
                     </ul>
                 </section>
                 <section>
                     <h2>C'est la crise!!</h2>
                     <div class="save-illustration">
-                        <img src="../medias/clip-problem-solving.png" alt="dev" />
+                        <img src="../medias/crise.jpg" alt="dev" />
                     </div>
                 </section>
                 <section>
                     <h2>Naissance du génie logiciel</h2>
                     <ul>
-                        <li>Conférence de l'Otan 1968 à Garmisch
+                        <li class="fragment fade-up">Conférence de l'Otan 1968 à Garmisch
                             <ul>
-                                <li>Proposé par <strong>L. Bauer</strong> </li>
-                                <li>Les difficultés de la production de logiciel </li>
-                                <li>Intitulé: <em>Working Conference on Software Engineering</em> </li>
+                                <li class="fragment fade-up">Les difficultés de la production de logiciel </li>
+                                <li class="fragment fade-up">Intitulé: <em>Working Conference on Software
+                                        Engineering</em> </li>
                             </ul>
                         </li>
-                        <li>Conférence de l'Otan 1969 à Rome</li>
-                        <li>Pas de solution immédiate</li>
-                        <li>Naissance du génie logiciel
+                        <li class="fragment fade-up">Conférence de l'Otan 1969 à Rome</li>
+                        <li class="fragment fade-up">Pas de solution immédiate</li>
+                        <li class="fragment fade-up">Naissance du génie logiciel
                             <ul>
-                                <li>Identification grandes lignes</li>
-                                <li>Définitions des objectifs</li>
+                                <li class="fragment fade-up">Identification grandes lignes</li>
+                                <li class="fragment fade-up">Définitions des objectifs</li>
                             </ul>
                         </li>
-                        <li>Naissance outils et méthode</li>
+                        <li class="fragment fade-up">Naissance outils et méthode</li>
                     </ul>
+                    <aside class="notes">
+                        OTAN: Organisation du traité de l'Atlantique nord
+                        organisation politico-militaire mise en place par les pays signataires du traité de l'Atlantique
+                        Nord afin de pouvoir remplir leurs obligations de sécurité et de défense collectives
+                    </aside>
+                </section>
+                <section>
+                    <h2>Pourquoi pas mettre plus de monde?</h2>
+                    <q>Neuf femmes ne font pas un enfant en un mois. </q> &#128515;
+                    <div>
+                        <strong> Frederick Brooks</strong>
+                    </div>
                 </section>
             </section>
             <!-- End Historique du génie logiciel -->
@@ -138,12 +179,12 @@
                 <section>
                     <h2>Qualité logiciel</h2>
                     <ul>
-                        <li>Une des raison à l'origne du génie logiciel </li>
-                        <li>Une appréciation basée sur des indicateurs</li>
-                        <li>Dépend:
+                        <li class="fragment fade-up">Une des raisons à l'origne du génie logiciel </li>
+                        <li class="fragment fade-up">Une appréciation basée sur des indicateurs</li>
+                        <li class="fragment fade-up">Dépend:
                             <ul>
-                                <li>Entièrement de sa construction</li>
-                                <li>Processus utilisés pour son développement</li>
+                                <li class="fragment fade-up">Entièrement de sa construction</li>
+                                <li class="fragment fade-up">Processus utilisés pour son développement</li>
                             </ul>
                         </li>
                     </ul>
@@ -151,52 +192,79 @@
                 <section>
                     <h2>Indicateurs de qualité <strong>(ISO ISO/IEC 25010:2011) </strong></h2>
                     <ul>
-                        <li>Capacité fonctionnelle</li>
-                        <li>Facilité d'utilisation</li>
-                        <li>Fiabilité</li>
-                        <li>Performance</li>
-                        <li>Maintenabilité</li>
-                        <li>Portabilité</li>
+                        <li class="fragment fade-up">Capacité fonctionnelle</li>
+                        <li class="fragment fade-up">Facilité d'utilisation</li>
+                        <li class="fragment fade-up">Fiabilité</li>
+                        <li class="fragment fade-up">Performance</li>
+                        <li class="fragment fade-up">Maintenabilité</li>
+                        <li class="fragment fade-up">Portabilité</li>
                     </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>La capacité fonctionnelle. C’est-à-dire la capacité qu'ont les fonctionnalités d'un
+                                logiciel à répondre aux exigences et besoins explicites ou implicites des usagers
+                            </li>
+                            <li>La facilité d'utilisation, qui porte sur l'effort nécessaire pour apprendre à manipuler
+                                le
+                                logiciel. En font partie la facilité de compréhension, d'apprentissage et d'exploitation
+                                et la robustesse (une utilisation incorrecte n'entraîne pas de dysfonctionnement)</li>
+                            <li>La fiabilité, c'est-à-dire la capacité d'un logiciel de rendre des résultats corrects
+                                quelles que soient les conditions d'exploitation. En font partie la tolérance aux
+                                pannes, la capacité d'un logiciel de fonctionner même en étant handicapé par la
+                                panne d'un composant (logiciel ou matériel) ;</li>
+                            <li>La performance, c'est-à-dire le rapport entre la quantité de ressources utilisées
+                                (moyens matériels, temps, personnel), et la quantité de résultats délivrés. En font
+                                partie le temps de réponse, le débit et l'extensibilité - capacité à maintenir la
+                                performance même en cas d'utilisation intensive</li>
+                            <li>La maintenabilité, qui mesure l'effort nécessaire à corriger ou transformer le logiciel.
+                                En font partie l'extensibilité, c'est-à-dire le peu d'effort nécessaire pour y ajouter
+                                de
+                                nouvelles fonctions </li>
+                            <li>La portabilité, c'est-à-dire l'aptitude d'un logiciel à fonctionner dans un
+                                environnement
+                                matériel ou logiciel différent de son environnement initial. En font partie la facilité
+                                d'installation et de configuration dans le nouvel environnement.</li>
+                        </ul>
+                    </aside>
                 </section>
                 <section>
                     <h2>Enjeux pour les organisations</h2>
                     <ul>
-                        <li>Investissement de millions</li>
-                        <li>Acquérir de nouveaux clients & marché</li>
-                        <li>Réduire côut de production</li>
-                        <li>Répondre très vite aux nouvelles demandes</li>
-                        <li>Time to market</li>
-                        <li>Plus agile</li>
+                        <li class="fragment fade-up">Investissement de millions</li>
+                        <li class="fragment fade-up">Acquérir de nouveaux clients & marchés</li>
+                        <li class="fragment fade-up">Réduire côut de production</li>
+                        <li class="fragment fade-up">Répondre très vite aux nouvelles demandes</li>
+                        <li class="fragment fade-up">Time to market</li>
+                        <li class="fragment fade-up">Plus agile</li>
                     </ul>
 
                 </section>
                 <section>
-                    <h2>Enjeux pour les organisations</h2>
+                    <h2>Enjeux pour les organisations (risques)</h2>
                     <ul>
-                        <li>Perte de chiffre d'affaire</li>
-                        <li>Arrêt d'activités</li>
-                        <li>Image écornée</li>
-                        <li>Mort d'hommes &#128546;</li>
+                        <li class="fragment fade-up">Perte de chiffre d'affaire</li>
+                        <li class="fragment fade-up">Arrêt d'activités</li>
+                        <li class="fragment fade-up">Image écornée</li>
+                        <li class="fragment fade-up">Mort d'hommes &#128546;</li>
                     </ul>
                 </section>
                 <section>
                     <h2>Quelques gros bugs dans l'histoire</h2>
                     <ul>
-                        <li>Le Blackout de Facebook
+                        <li class="fragment fade-up">Le Blackout de Facebook
                             <ul>
                                 <li>Cours Facebook plonge de 4.89%</li>
                                 <li>Perte de <strong>6 Md$ &#129296;</strong> </li>
                             </ul>
                         </li>
-                        <li>Ariane 5 - 1995
+                        <li class="fragment fade-up">Ariane 5 - 1995
                             <ul>
                                 <li>Bug informatique de la fusée ariane 5</li>
                                 <li>Explosion 36s après lancement</li>
                                 <li>500 000 millions de dollars qui s’envolent en fumée &#128563;</li>
                             </ul>
                         </li>
-                        <li>Toyota – 2009
+                        <li class="fragment fade-up">Toyota – 2009
                             <ul>
                                 <li>200 à 400 morts et 2,3 milliards d’euros &#128561;</li>
                                 <li>La Lexus ES350 a tué nombre de ses propriétaires</li>
@@ -212,8 +280,9 @@
                 <section>
                     <h2>Quelques annecdotes personnelles</h2>
                     <ul>
-                        <li>Le bug Amazon à 1M€ AXA &#129297;</li>
-                        <li>La fermeture d'une usine de production en Chine de Decathlon &#129300;</li>
+                        <li class="fragment fade-up">Le bug Amazon à 1M€ AXA &#129297;</li>
+                        <li class="fragment fade-up">La fermeture d'une usine de production en Chine de Decathlon
+                            &#129300;</li>
                     </ul>
                 </section>
             </section>
@@ -225,16 +294,15 @@
                 </section>
                 <section>
                     <h2>Les étapes du cycle de vie</h2>
-                    <ul>
-                        <li>Définition des objectifs</li>
-                        <li>Analyse des besoins et faisabilité</li>
-                        <li>Conception</li>
-                        <li>Implémentation</li>
-                        <li>Test</li>
-                        <li>Mise en production</li>
-                        <li>Run (maintenance)</li>
-
-                    </ul>
+                    <div class="illustration-bg">
+                        <img src="../medias/lifecycle.png" alt="dev" />
+                    </div>
+                </section>
+                <section>
+                    <h2>Méthode itérative</h2>
+                    <div class="illustration-bg">
+                        <img src="../medias/lifecycle-1.png" alt="dev" />
+                    </div>
                 </section>
             </section>
             <!-- End Le cycle de vie d’un logiciel -->
@@ -244,29 +312,38 @@
                     <h1>Architecture logicielle</h1>
                 </section>
                 <section>
-                    <h2>Fred-Brooks</h2>
+                    <h2>Fred Brooks</h2>
                     <div class="save-illustration">
                         <img src="../medias/Fred-Brooks .jpg" alt="dev" />
                     </div>
                     <q>Le facteur déterminant du succès ou de l’échec d’un projet est l’unité conceptuelle de son
                         architecture</q>
                     <div>
-                        <strong>The Mythical Man-Month (Le mythe de l’homme-mois) - 1975</strong>
+                        <small>The Mythical Man-Month (Le mythe de l’homme-mois) - 1975</small>
                     </div>
+                    <aside class="notes">
+                        <ul>
+                            <li> Conduit OS/360, l'un des projets les plus chers et les plus en retard de
+                                l'informatique, qui a failli tuer IBM</li>
+                            <li> En 1993, il reçoit la médaille John von Neumann3.</li>
+                            <li>Il a reçu le prix Turing en 1999 </li>
+                        </ul>
+
+                    </aside>
                 </section>
                 <section>
                     <h2>Principes d’architecture</h2>
                     <ul>
-                        <li>Répresentation abstraite</li>
-                        <li>Comportement d'un système</li>
-                        <li>Sous composant (décomposition)</li>
-                        <li>Comprehension système complexe (diviser pour mieux régner)</li>
-                        <li>Decouper le travail
+                        <li class="fragment fade-up">Répresentation abstraite</li>
+                        <li class="fragment fade-up">Comportement d'un système</li>
+                        <li class="fragment fade-up">Décomposition)</li>
+                        <li class="fragment fade-up">Comprehension système complexe (diviser pour mieux régner)</li>
+                        <li class="fragment fade-up">Decouper le travail
                             <ul>
-                                <li>Dev Frontend</li>
-                                <li>Dev Backend</li>
-                                <li>DBA</li>
-                                <li>...</li>
+                                <li class="fragment fade-up">Dev Frontend</li>
+                                <li class="fragment fade-up">Dev Backend</li>
+                                <li class="fragment fade-up">DBA</li>
+                                <li class="fragment fade-up">...</li>
                             </ul>
                         </li>
                     </ul>
@@ -274,8 +351,8 @@
                 <section>
                     <h2>Catégories d'architecture</h2>
                     <ul>
-                        <li>Architecture applicative</li>
-                        <li>Architecture d'intégration</li>
+                        <li class="fragment fade-up">Architecture applicative</li>
+                        <li class="fragment fade-up">Architecture d'intégration</li>
                     </ul>
                 </section>
             </section>
@@ -288,13 +365,13 @@
                 <section>
                     <h2>Flat structure (structure plate)</h2>
                     <ul>
-                        <li>Big ball of MUD</li>
-                        <li>Non structuré </li>
-                        <li>Rempli de dépendances cachées entre les parties</li>
-                        <li>Avec beaucoup de données</li>
-                        <li>Duplication de code </li>
-                        <li>Une identification peu claire des couches et des problèmes​</li>
-                        <li>Code spaghetti</li>
+                        <li class="fragment fade-up">Big ball of MUD</li>
+                        <li class="fragment fade-up">Non structuré </li>
+                        <li class="fragment fade-up">Rempli de dépendances cachées entre les parties</li>
+                        <li class="fragment fade-up">Avec beaucoup de données</li>
+                        <li class="fragment fade-up">Duplication de code </li>
+                        <li class="fragment fade-up">Une identification peu claire des couches et des problèmes​</li>
+                        <li class="fragment fade-up">Code spaghetti</li>
                     </ul>
                 </section>
                 <section>
@@ -316,22 +393,22 @@
                 <section>
                     <h2>Notion de couche (layer)</h2>
                     <ul>
-                        <li>Faire un découpage logique</li>
-                        <li>Sous-sytèmes à part entière</li>
-                        <li>Isoler les responsablités</li>
-                        <li>Principe: <q>Separation of concern</q></li>
-                        <li>Casser le couplage</li>
+                        <li class="fragment fade-up">Faire un découpage logique</li>
+                        <li class="fragment fade-up">Sous-sytèmes à part entière</li>
+                        <li class="fragment fade-up">Isoler les responsablités</li>
+                        <li class="fragment fade-up">Principe: <q>Separation of concern</q></li>
+                        <li class="fragment fade-up">Casser le couplage</li>
                     </ul>
                 </section>
                 <section>
                     <h2>Presentation Layer (couche présentation) </h2>
                     <ul>
-                        <li>Comment l'information est presentée</li>
-                        <li>Expose un client graphique (GUI)
+                        <li class="fragment fade-up">Comment l'information est presentée</li>
+                        <li class="fragment fade-up">Expose un client graphique (GUI)
                             <ul>
-                                <li>Console: client SSH, Telnet,...</li>
-                                <li>Lourd: Outlook, Skype,...</li>
-                                <li>Léger: Gmail, Facebook</li>
+                                <li class="fragment fade-up">Console: client SSH, Telnet,...</li>
+                                <li class="fragment fade-up">Lourd: Outlook, Skype,...</li>
+                                <li class="fragment fade-up">Léger: Gmail, Facebook</li>
                             </ul>
                         </li>
                     </ul>
@@ -339,15 +416,15 @@
                 <section>
                     <h2>Business layer (couche business)</h2>
                     <ul>
-                        <li>Noyeau de l'application</li>
-                        <li>Règles qui régissent processus métiers</li>
-                        <li>Change peu</li>
-                        <li>Agnostique à la technologie</li>
-                        <li>Exemples:
+                        <li class="fragment fade-up">Noyau de l'application</li>
+                        <li class="fragment fade-up">Règles qui régissent processus métiers</li>
+                        <li class="fragment fade-up">Change peu</li>
+                        <li class="fragment fade-up">Agnostique à la technologie</li>
+                        <li class="fragment fade-up">Exemples:
                             <ul>
-                                <li>Les règles de calculs</li>
-                                <li>Exécution de commandes</li>
-                                <li>La prise de décision logique</li>
+                                <li class="fragment fade-up">Les règles de calculs</li>
+                                <li class="fragment fade-up">Exécution de commandes</li>
+                                <li class="fragment fade-up">La prise de décision logique</li>
                             </ul>
                         </li>
                     </ul>
@@ -355,12 +432,12 @@
                 <section>
                     <h2>Data Layer (couche d'accès à la donnée)</h2>
                     <ul>
-                        <li>Interace de connexion aux sources de stockage</li>
-                        <li>
+                        <li class="fragment fade-up">Interace de connexion aux sources de stockage</li>
+                        <li class="fragment fade-up"> Base de données
                             <ul>
-                                <li>Base de données rélationnelle</li>
-                                <li>Base de données NoSQL</li>
-                                <li>Fichiers (txt, csv,...)</li>
+                                <li class="fragment fade-up">Base de données rélationnelle</li>
+                                <li class="fragment fade-up">Base de données NoSQL</li>
+                                <li class="fragment fade-up">Fichiers (txt, csv,...)</li>
                             </ul>
                         </li>
                     </ul>
@@ -374,13 +451,13 @@
                 <section>
                     <h2>Avantages de l'architecture multicouches</h2>
                     <ul>
-                        <li>Découplage</li>
-                        <li>Moins de risque de régréssion</li>
-                        <li>Lisibilité & compréhension</li>
-                        <li>Modularité
+                        <li class="fragment fade-up">Découplage</li>
+                        <li class="fragment fade-up">Moins de risque de régréssion</li>
+                        <li class="fragment fade-up">Lisibilité & compréhension</li>
+                        <li class="fragment fade-up">Modularité
                             <ul>
-                                <li>Changé de fournisseur de BD</li>
-                                <li>Changé de technologie front</li>
+                                <li class="fragment fade-up">Changé de fournisseur de BD</li>
+                                <li class="fragment fade-up">Changé de technologie front</li>
                             </ul>
                         </li>
                     </ul>
@@ -394,6 +471,7 @@
                         permettant de résoudre des problèmes classiques de la conception de logiciels.</q>
                     <strong>refactoring.guru</strong>
                 </section>
+                <section data-background-iframe="https://refactoring.guru/fr"></section>
 
                 <section>
                     <h2>Modèle Vue Controller(MVC) Pattern</h2>
@@ -402,11 +480,16 @@
                     </div>
                 </section>
                 <section>
+                    <h2>Modèle Vue Controller(MVC) Pattern</h2>
+                    <div class="fig-container" data-fig-id="fig-collision-detection" data-file="diagram.html"></div>
+                </section>
+                <section>
                     <h2>Limites l'architecture multicouhes</h2>
                     <ul>
-                        <li>C'est une séparation logique</li>
-                        <li>Un seul environnement d'execution: <strong>MONOLITHE</strong></li>
-                        <li>Gestion des accès multi-canaux (mobile, web)</li>
+                        <li class="fragment fade-up">C'est une séparation logique</li>
+                        <li class="fragment fade-up">Un seul environnement d'execution: <strong>MONOLITHE</strong>
+                        </li>
+                        <li class="fragment fade-up">Gestion des accès multi-canaux (mobile, web)</li>
                     </ul>
                 </section>
                 <section>
@@ -415,21 +498,22 @@
                 <section>
                     <h2>Notion de tiers</h2>
                     <ul>
-                        <li>Tier: <i>Environnement d'exécution contenant une couche logique.</i></li>
-                        <li>Aller plus loin dans le découplage</li>
-                        <li>Deploiement physique par couche </li>
-                        <li>Garanti indépendance forte entre les couches logiques</li>
+                        <li class="fragment fade-up">Tier: <i>Environnement d'exécution contenant une couche
+                                logique.</i></li>
+                        <li class="fragment fade-up">Aller plus loin dans le découplage</li>
+                        <li class="fragment fade-up">Deploiement physique par couche </li>
+                        <li class="fragment fade-up">Garanti indépendance forte entre les couches logiques</li>
                     </ul>
                 </section>
                 <section>
                     <h2>Architecture 3-tier</h2>
                     <ul>
-                        <li>Emerge à partir des années 90</li>
-                        <li>Composé:
+                        <li class="fragment fade-up">Emerge à partir des années 90</li>
+                        <li class="fragment fade-up">Composé:
                             <ul>
-                                <li>Tier client (client lourd, léger)</li>
-                                <li>Middle-tier (logique métier)</li>
-                                <li>Serveur de base de données</li>
+                                <li class="fragment fade-up">Tier client (client lourd, léger)</li>
+                                <li class="fragment fade-up">Middle-tier (logique métier)</li>
+                                <li class="fragment fade-up">Serveur de base de données</li>
                             </ul>
                         </li>
                     </ul>
@@ -457,14 +541,14 @@
                 <section>
                     <h2>Client lourd</h2>
                     <ul>
-                        <li>Logiciel destiné à être installé localement </li>
-                        <li>Possède un setup</li>
-                        <li>Skype, Outlook</li>
-                        <li>Difficultés
+                        <li class="fragment fade-up">Logiciel destiné à être installé localement </li>
+                        <li class="fragment fade-up">Possède un setup</li>
+                        <li class="fragment fade-up">Skype, Outlook</li>
+                        <li class="fragment fade-up">Difficultés
                             <ul>
-                                <li>Gestion des plateformes(linux, windows, mac,...)</li>
-                                <li>Les versions de système d'exploitation</li>
-                                <li>Les mises à jours</li>
+                                <li class="fragment fade-up">Gestion des plateformes(linux, windows, mac,...)</li>
+                                <li class="fragment fade-up">Les versions de système d'exploitation</li>
+                                <li class="fragment fade-up">Les mises à jours</li>
                             </ul>
                         </li>
                     </ul>
@@ -472,12 +556,12 @@
                 <section>
                     <h2>Client léger</h2>
                     <ul>
-                        <li>S'exécute dans un navigateur Web</li>
-                        <li>Exemple: Gmail, Facebook</li>
-                        <li>Navigateur:
+                        <li class="fragment fade-up">S'exécute dans un navigateur Web</li>
+                        <li class="fragment fade-up">Exemple: Gmail, Facebook</li>
+                        <li class="fragment fade-up">Navigateur:
                             <ul>
-                                <li>Implémentation standard des règles W3C</li>
-                                <li>Gère problèmes de compatibilité</li>
+                                <li class="fragment fade-up">Implémentation standard des règles W3C</li>
+                                <li class="fragment fade-up">Gère problèmes de compatibilité</li>
                             </ul>
                         </li>
 
@@ -486,19 +570,21 @@
                 <section>
                     <h1>Zoom sur le mobile</h1>
                     <ul>
-                        <li>Marché à fort potentiel</li>
-                        <li>Croissance exponentielle</li>
-                        <li>Quelques chiffres rapport digital 2021 de <strong>We are Social & Hootsuite</strong>
+                        <li class="fragment fade-up">Marché à fort potentiel</li>
+                        <li class="fragment fade-up">Croissance exponentielle</li>
+                        <li class="fragment fade-up">Quelques chiffres rapport digital 2021 de <strong>We are Social
+                                &
+                                Hootsuite</strong>
                             <ul>
-                                <li>Nombre d'utilisateur: 5, 27Md</li>
-                                <li>67% de la population mondiale</li>
-                                <li><strong>7h/jour</strong> sur le web &#128562;</li>
+                                <li class="fragment fade-up">Nombre d'utilisateur: 5, 27Md</li>
+                                <li class="fragment fade-up">67% de la population mondiale</li>
+                                <li class="fragment fade-up"><strong>7h/jour</strong> sur le web &#128562;</li>
 
                             </ul>
-                        <li>En Guinée
+                        <li class="fragment fade-up">En Guinée
                             <ul>
-                                <li>MPTEN</li>
-                                <li>~6M d'abonnés internet ~14M téléphonie</li>
+                                <li class="fragment fade-up">MPTEN</li>
+                                <li class="fragment fade-up">~6M d'abonnés internet ~14M téléphonie</li>
                             </ul>
                         </li>
                         </li>
@@ -512,19 +598,19 @@
                 <section>
                     <h2>développement mobile</h2>
                     <ul>
-                        <li>Des contraites drastique:
+                        <li class="fragment fade-up">Des contraites drastique:
                             <ul>
-                                <li>Résolution d'écran</li>
-                                <li>Bande passante</li>
-                                <li>Déploiement via les stores</li>
+                                <li class="fragment fade-up">Résolution d'écran</li>
+                                <li class="fragment fade-up">Bande passante</li>
+                                <li class="fragment fade-up">Déploiement via les stores</li>
                             </ul>
                         </li>
-                        <li>Deux choix d'architecture:
+                        <li class="fragment fade-up">Deux choix d'architecture:
                             <ul>
-                                <li>Android - Google</li>
-                                <li>iOs - Apple</li>
-                                <li>développement coûteux</li>
-                                <li>Faire un choix</li>
+                                <li class="fragment fade-up">Android - Google</li>
+                                <li class="fragment fade-up">iOs - Apple</li>
+                                <li class="fragment fade-up">développement coûteux</li>
+                                <li class="fragment fade-up">Faire un choix</li>
                             </ul>
                         </li>
                     </ul>
@@ -540,19 +626,19 @@
                 <section>
                     <h2>Développement natif</h2>
                     <ul>
-                        <li>On choisit son camp</li>
-                        <li>Décision dictée par le marché</li>
-                        <li>Android:Java/kotlin </li>
-                        <li>iOS: Objective C/swift</li>
-                        <li>Avantage:
+                        <li class="fragment fade-up">On choisit son camp</li>
+                        <li class="fragment fade-up">Décision dictée par le marché</li>
+                        <li class="fragment fade-up">Android:Java/kotlin </li>
+                        <li class="fragment fade-up">iOS: Objective C/swift</li>
+                        <li class="fragment fade-up">Avantage:
                             <ul>
-                                <li>Performante</li>
-                                <li>Accès aux capeurs: GPS, Caméra, Gyroscope</li>
-                                <li>Meilleure ergonomie</li>
-                                <li>Fonctionne hors-ligne (offline)</li>
+                                <li class="fragment fade-up">Performante</li>
+                                <li class="fragment fade-up">Accès aux capeurs: GPS, Caméra, Gyroscope</li>
+                                <li class="fragment fade-up">Meilleure ergonomie</li>
+                                <li class="fragment fade-up">Fonctionne hors-ligne (offline)</li>
                             </ul>
                         </li>
-                        <li>Inconvenient: côut</li>
+                        <li class="fragment fade-up">Inconvenient: côut</li>
                     </ul>
                 </section>
                 <section>
@@ -568,14 +654,14 @@
                 <section>
                     <h1>Notion d'API</h1>
                     <ul>
-                        <li>Application Programming Interface</li>
-                        <li>Un moyen de faire dialoguer des applications</li>
-                        <li>Producteur de service</li>
-                        <li>Consommateur de service</li>
-                        <li>Interface de programmation
+                        <li class="fragment fade-up">Application Programming Interface</li>
+                        <li class="fragment fade-up">Un moyen de faire dialoguer des applications</li>
+                        <li class="fragment fade-up">Producteur de service</li>
+                        <li class="fragment fade-up">Consommateur de service</li>
+                        <li class="fragment fade-up">Interface de programmation
                             <ul>
-                                <li>Accès services tiers</li>
-                                <li>Données/fonctionnalités</li>
+                                <li class="fragment fade-up">Accès services tiers</li>
+                                <li class="fragment fade-up">Données/fonctionnalités</li>
                             </ul>
                         </li>
                     </ul>
@@ -592,19 +678,25 @@
                                 fournisseurs respectifs de ces services qui s’en occupent.
 
                             </li>
-                            <li> Cela permet aux développeurs d’ajouter des fonctionnalités dans une application grâce à
+                            <li> Cela permet aux développeurs d’ajouter des fonctionnalités dans une application
+                                grâce à
                                 des services déjà développés par d’autres entreprises.
                             </li>
                             <li> L’objectif en faisant recours à ces
-                                API est de ne pas avoir à réinventer la roue et de récréer des applications comme Google
+                                API est de ne pas avoir à réinventer la roue et de récréer des applications comme
+                                Google
                                 Maps ou Orange Money et ainsi économiser du temps et de l’argent.
-                                Les API représentent un enjeu financier majeur puisque les clients payent pour utiliser
+                                Les API représentent un enjeu financier majeur puisque les clients payent pour
+                                utiliser
                                 leurs
-                                applications . Ce qui veut dire que créer des services et les mettre à disposition via
+                                applications . Ce qui veut dire que créer des services et les mettre à disposition
+                                via
                                 des API
-                                ouvrent des opportunités business. L’API n’est pas juste une solution technique, c'est
+                                ouvrent des opportunités business. L’API n’est pas juste une solution technique,
+                                c'est
                                 un
-                                produit qui peut générer des sources de revenus pour les organisations qui les mettent
+                                produit qui peut générer des sources de revenus pour les organisations qui les
+                                mettent
                                 en
                                 place.</li>
                         </ul>
@@ -613,23 +705,23 @@
                 <section>
                     <h2>API REST</h2>
                     <ul>
-                        <li>Respecte les standards du web</li>
-                        <li>Architecture logicielle basée sur le HTTP</li>
+                        <li class="fragment fade-up">Respecte les standards du web</li>
+                        <li class="fragment fade-up">Architecture logicielle basée sur le HTTP</li>
                     </ul>
                 </section>
                 <section>
                     <h2>Notions HTTP</h2>
                     <ul>
-                        <li>Notion de ressource</li>
-                        <li>URI</li>
-                        <li>URL</li>
-                        <li>Les en-têtes</li>
-                        <li>Verbe HTTP:
+                        <li class="fragment fade-up">Notion de ressource</li>
+                        <li class="fragment fade-up">URI</li>
+                        <li class="fragment fade-up">URL</li>
+                        <li class="fragment fade-up">Les en-têtes</li>
+                        <li class="fragment fade-up">Verbe HTTP:
                             <ul>
-                                <li>GET</li>
-                                <li>POST</li>
-                                <li>PUT/PATCH</li>
-                                <li>DELETE</li>
+                                <li class="fragment fade-up">GET</li>
+                                <li class="fragment fade-up">POST</li>
+                                <li class="fragment fade-up">PUT/PATCH</li>
+                                <li class="fragment fade-up">DELETE</li>
 
                             </ul>
 
@@ -640,31 +732,34 @@
                         <ul>
                             <li>L’'URI (Unifrom Resource Identifier ) identifie une ressource.</li>
                             <li>Une URL comprend, en plus de l'URI, des informations sur la
-                                manière d'accéder à la ressource, comme le protocole à utiliser (http, ftp, ...)</li>
+                                manière d'accéder à la ressource, comme le protocole à utiliser (http, ftp, ...)
+                            </li>
                         </ul>
                     </aside>
                 </section>
                 <section>
-                    <h2>Exemple de l'API gestion de notes des étudiants</h2>
+                    <h2>Exemple d'API gestion de notes des étudiants</h2>
                     <ul>
-                        <li>Définit les resources:
+                        <li class="fragment fade-up">Définit les resources:
                             <ul>
-                                <li>Etudiants => matricule</li>
-                                <li>Notes => cours</li>
+                                <li class="fragment fade-up">Etudiants => matricule</li>
+                                <li class="fragment fade-up">Notes => cours</li>
                             </ul>
-                        <li>URI:
+                        <li class="fragment fade-up">URI:
                             <ul>
-                                <li> <em>api/etudiants</em> </li>
-                                <li> <em>api/etudiants/1052478963</em> </li>
-                                <li> <em>api/etudiants/1052478963/notes</em></li>
-                                <li> <em>api/etudiants/1052478963/cours/3/notes</em></li>
+                                <li class="fragment fade-up"> <em>api/etudiants</em> </li>
+                                <li class="fragment fade-up"> <em>api/etudiants/1052478963</em> </li>
+                                <li class="fragment fade-up"> <em>api/etudiants/1052478963/notes</em></li>
+                                <li class="fragment fade-up"> <em>api/etudiants/1052478963/cours/3/notes</em></li>
                             </ul>
 
                         </li>
-                        <li>URL:
+                        <li class="fragment fade-up">URL:
                             <ul>
-                                <li> <em>https://univ-labe.edu.gn/api/etudiants</em> </li>
-                                <li> <em>https://univ-labe.edu.gn/api/etudiants/1052478963</em> </li>
+                                <li class="fragment fade-up"> <em>https://univ-labe.edu.gn/api/etudiants</em> </li>
+                                <li class="fragment fade-up">
+                                    <em>https://univ-labe.edu.gn/api/etudiants/1052478963</em>
+                                </li>
                             </ul>
                         </li>
 
@@ -675,11 +770,11 @@
                 <section>
                     <h2>Format d'échange(JSON) </h2>
                     <ul>
-                        <li>JSON(Javascript Object Notation)</li>
-                        <li>Léger</li>
-                        <li>Le plus utilisé</li>
-                        <li>Il existe aussi le XML</li>
-                        <li>Lourd et verbeux</li>
+                        <li class="fragment fade-up">JSON(Javascript Object Notation)</li>
+                        <li class="fragment fade-up">Léger</li>
+                        <li class="fragment fade-up">Le plus utilisé</li>
+                        <li class="fragment fade-up">Il existe aussi le XML</li>
+                        <li class="fragment fade-up">Lourd et verbeux</li>
                     </ul>
                 </section>
                 <section>
@@ -699,16 +794,16 @@
                 <section>
                     <h2>Produire une description d'API</h2>
                     <ul>
-                        <li>Décrire API:
+                        <li class="fragment fade-up">Décrire API:
                             <ul>
-                                <li> Entrées attendues </li>
-                                <li>Sorties à générer </li>
-                                <li>Autorisation requise </li>
-                                <li>... </li>
+                                <li class="fragment fade-up"> Entrées attendues </li>
+                                <li class="fragment fade-up">Sorties à générer </li>
+                                <li class="fragment fade-up">Autorisations requises </li>
+                                <li class="fragment fade-up">... </li>
                             </ul>
-                        <li>Constitue le contrat</li>
-                        <li>Pêut être definit avec OpenAPI</li>
-                        <li>Automatique</li>
+                        <li class="fragment fade-up">Constitue le contrat de service</li>
+                        <li class="fragment fade-up">Peut-être définit avec OpenAPI</li>
+                        <li class="fragment fade-up">Générer automatiquement</li>
                         </li>
                     </ul>
 
@@ -745,6 +840,8 @@
                     src: "node_modules/revealjs-animated/dist/revealjs-animated.js",
                     async: true,
                 },
+                { src: 'https://d3js.org/d3.v4.min.js', async: true, },
+                { src: 'node_modules/reveal.js-d3js/d3js.js', async: true, },
             ],
         });
     </script>
