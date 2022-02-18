@@ -99,6 +99,7 @@
   },
   "dependencies": {
     "reveal.js-d3js": "^1.0.0",
+    "reveal.js-menu": "^2.1.0",
     "revealjs-animated": "^1.2.2"
   }
 }

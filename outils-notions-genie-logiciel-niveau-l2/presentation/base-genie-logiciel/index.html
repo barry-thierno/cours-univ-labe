@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" href="../dist/reset.css" />
     <link rel="stylesheet" href="../dist/reveal.css" />
-    <link rel="stylesheet" href="../dist/theme/black.css" />
-    <link rel="stylesheet" href="../dist/theme/genie-logiciel.css" />
+    <link rel="stylesheet" href="../dist/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="../dist/theme/genie-logiciel.css" id="genie-logiciel" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
@@ -30,12 +30,13 @@
                 <p> Niveau 1 </p>
             </section>
             <section>
-                <section>
+                <section data-menu-title="Qui suis-je?">
                     <div class="illustration-bg">
                         <img src="../medias/profil.png" alt="dev" />
                     </div>
                 </section>
-                <section data-background-iframe="https://axaguildev.github.io/design-system/get-started/contributors/">
+                <section data-menu-title="Mes contributions open source"
+                    data-background-iframe="https://axaguildev.github.io/design-system/get-started/contributors/">
                 </section>
 
             </section>
@@ -175,6 +176,14 @@
                             respectant certains critères de <strong>qualité</strong> eux-mêmes spécifiés, ainsi que des
                             <strong>contraintes économiques.</strong>
                         </q></div>
+                    <aside class="notes">
+                        <ul>
+                            <li>Les mots mis en valeur</li>
+                            <li>Outils: MERSIE, d'architecture, de design, </li>
+                            <li>Contraintes économiques</li>
+                            <li>Qualité</li>
+                        </ul>
+                    </aside>
                 </section>
                 <section>
                     <h2>Qualité logiciel</h2>
@@ -230,9 +239,9 @@
                 <section>
                     <h2>Enjeux pour les organisations</h2>
                     <ul>
-                        <li class="fragment fade-up">Investissement de millions</li>
+                        <li class="fragment fade-up">Investissement en millions</li>
                         <li class="fragment fade-up">Acquérir de nouveaux clients & marchés</li>
-                        <li class="fragment fade-up">Réduire côut de production</li>
+                        <li class="fragment fade-up">Réduire côuts de production</li>
                         <li class="fragment fade-up">Répondre très vite aux nouvelles demandes</li>
                         <li class="fragment fade-up">Time to market</li>
                         <li class="fragment fade-up">Plus agile</li>
@@ -251,7 +260,7 @@
                 <section>
                     <h2>Quelques gros bugs dans l'histoire</h2>
                     <ul>
-                        <li class="fragment fade-up">Le Blackout de Facebook
+                        <li class="fragment fade-up">Le Blackout de Facebook (Octobre 2021)
                             <ul>
                                 <li>Cours Facebook plonge de 4.89%</li>
                                 <li>Perte de <strong>6 Md$ &#129296;</strong> </li>
@@ -291,6 +300,14 @@
             <section>
                 <section>
                     <h1>Le cycle de vie d’un logiciel</h1>
+                    <aside class="notes">
+                        <h5>Pour comprendre</h5>
+                        <ul>
+                            <li>Faire comme les biologistes</li>
+                            <li>S'interèssé à la vie du logiciel</li>
+                            <li>disséque</li>
+                        </ul>
+                    </aside>
                 </section>
                 <section>
                     <h2>Les étapes du cycle de vie</h2>
@@ -299,7 +316,7 @@
                     </div>
                 </section>
                 <section>
-                    <h2>Méthode itérative</h2>
+                    <h2>Méthode itérative (agile)</h2>
                     <div class="illustration-bg">
                         <img src="../medias/lifecycle-1.png" alt="dev" />
                     </div>
@@ -316,8 +333,10 @@
                     <div class="save-illustration">
                         <img src="../medias/Fred-Brooks .jpg" alt="dev" />
                     </div>
-                    <q>Le facteur déterminant du succès ou de l’échec d’un projet est l’unité conceptuelle de son
-                        architecture</q>
+                    <strong>
+                        <q>Le facteur déterminant du succès ou de l’échec d’un projet est l’unité conceptuelle de son
+                            architecture</q>
+                    </strong>
                     <div>
                         <small>The Mythical Man-Month (Le mythe de l’homme-mois) - 1975</small>
                     </div>
@@ -334,11 +353,11 @@
                 <section>
                     <h2>Principes d’architecture</h2>
                     <ul>
-                        <li class="fragment fade-up">Répresentation abstraite</li>
                         <li class="fragment fade-up">Comportement d'un système</li>
-                        <li class="fragment fade-up">Décomposition)</li>
+                        <li class="fragment fade-up">Répresentation abstraite</li>
+                        <li class="fragment fade-up">Décomposition en sous système</li>
                         <li class="fragment fade-up">Comprehension système complexe (diviser pour mieux régner)</li>
-                        <li class="fragment fade-up">Decouper le travail
+                        <li class="fragment fade-up">Découper le travail
                             <ul>
                                 <li class="fragment fade-up">Dev Frontend</li>
                                 <li class="fragment fade-up">Dev Backend</li>
@@ -347,6 +366,11 @@
                             </ul>
                         </li>
                     </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>On s'intéresse au Comportement d'un système</li>
+                        </ul>
+                    </aside>
                 </section>
                 <section>
                     <h2>Catégories d'architecture</h2>
@@ -377,7 +401,7 @@
                 <section>
                     <h2>Big bull of mud/Code spaghetti</h2>
                     <div class="save-illustration">
-                        <img src="../medias/bug-bull-mud.png" alt="dev" />
+                        <img src="../medias/spaghetti.jpeg" alt="dev" />
                     </div>
                 </section>
                 <section>
@@ -432,11 +456,11 @@
                 <section>
                     <h2>Data Layer (couche d'accès à la donnée)</h2>
                     <ul>
-                        <li class="fragment fade-up">Interace de connexion aux sources de stockage</li>
+                        <li class="fragment fade-up">Interface de connexion aux sources de stockage</li>
                         <li class="fragment fade-up"> Base de données
                             <ul>
-                                <li class="fragment fade-up">Base de données rélationnelle</li>
-                                <li class="fragment fade-up">Base de données NoSQL</li>
+                                <li class="fragment fade-up">Rélationnelle</li>
+                                <li class="fragment fade-up">NoSQL</li>
                                 <li class="fragment fade-up">Fichiers (txt, csv,...)</li>
                             </ul>
                         </li>
@@ -457,7 +481,7 @@
                         <li class="fragment fade-up">Modularité
                             <ul>
                                 <li class="fragment fade-up">Changé de fournisseur de BD</li>
-                                <li class="fragment fade-up">Changé de technologie front</li>
+                                <li class="fragment fade-up">Changé de technologies front</li>
                             </ul>
                         </li>
                     </ul>
@@ -479,10 +503,10 @@
                         <img src="../medias/mvc-pattern.png" alt="dev" />
                     </div>
                 </section>
-                <section>
+                <!-- <section>
                     <h2>Modèle Vue Controller(MVC) Pattern</h2>
                     <div class="fig-container" data-fig-id="fig-collision-detection" data-file="diagram.html"></div>
-                </section>
+                </section> -->
                 <section>
                     <h2>Limites l'architecture multicouhes</h2>
                     <ul>
@@ -526,6 +550,12 @@
                     </div>
                 </section>
                 <section>
+                    <h2>Schéma Architecture 2-tier(exemple)</h2>
+                    <div class="illustration-bg">
+                        <img src="../medias/tiers-azure.png" alt="dev" />
+                    </div>
+                </section>
+                <section>
                     <h2>Qu'en est-il des accès multi-canaux?</h2>
                     <div class="save-illustration">
                         <img src="../medias/undraw_questions_re_1fy7.svg" alt="dev" />
@@ -560,7 +590,7 @@
                         <li class="fragment fade-up">Exemple: Gmail, Facebook</li>
                         <li class="fragment fade-up">Navigateur:
                             <ul>
-                                <li class="fragment fade-up">Implémentation standard des règles W3C</li>
+                                <li class="fragment fade-up">Implémentation standards des règles W3C</li>
                                 <li class="fragment fade-up">Gère problèmes de compatibilité</li>
                             </ul>
                         </li>
@@ -576,7 +606,7 @@
                                 &
                                 Hootsuite</strong>
                             <ul>
-                                <li class="fragment fade-up">Nombre d'utilisateur: 5, 27Md</li>
+                                <li class="fragment fade-up">Nombre d'utilisateurs: 5, 27Md</li>
                                 <li class="fragment fade-up">67% de la population mondiale</li>
                                 <li class="fragment fade-up"><strong>7h/jour</strong> sur le web &#128562;</li>
 
@@ -596,9 +626,9 @@
                     </aside>
                 </section>
                 <section>
-                    <h2>développement mobile</h2>
+                    <h2>Développement mobile</h2>
                     <ul>
-                        <li class="fragment fade-up">Des contraites drastique:
+                        <li class="fragment fade-up">Des contraites drastiques:
                             <ul>
                                 <li class="fragment fade-up">Résolution d'écran</li>
                                 <li class="fragment fade-up">Bande passante</li>
@@ -609,8 +639,8 @@
                             <ul>
                                 <li class="fragment fade-up">Android - Google</li>
                                 <li class="fragment fade-up">iOs - Apple</li>
-                                <li class="fragment fade-up">développement coûteux</li>
                                 <li class="fragment fade-up">Faire un choix</li>
+                                <li class="fragment fade-up">développement coûteux</li>
                             </ul>
                         </li>
                     </ul>
@@ -628,9 +658,9 @@
                     <ul>
                         <li class="fragment fade-up">On choisit son camp</li>
                         <li class="fragment fade-up">Décision dictée par le marché</li>
-                        <li class="fragment fade-up">Android:Java/kotlin </li>
-                        <li class="fragment fade-up">iOS: Objective C/swift</li>
-                        <li class="fragment fade-up">Avantage:
+                        <li class="fragment fade-up"><strong>Android: </strong>Java/kotlin </li>
+                        <li class="fragment fade-up"><strong>iOS:</strong> Objective C/swift</li>
+                        <li class="fragment fade-up"><strong>Avantages:</strong>
                             <ul>
                                 <li class="fragment fade-up">Performante</li>
                                 <li class="fragment fade-up">Accès aux capeurs: GPS, Caméra, Gyroscope</li>
@@ -638,12 +668,50 @@
                                 <li class="fragment fade-up">Fonctionne hors-ligne (offline)</li>
                             </ul>
                         </li>
-                        <li class="fragment fade-up">Inconvenient: côut</li>
+                        <li class="fragment fade-up"><strong>Inconvenient:</strong>côut</li>
                     </ul>
                 </section>
                 <section>
                     <h2>Les applications Web</h2>
-
+                    <ul>
+                        <li class="fragment fade-up">Comme une application un tier client classique</li>
+                        <li class="fragment fade-up">Web (HTML5) CSS3, JAVASCRIPT</li>
+                        <li class="fragment fade-up">Avantages:
+                            <ul>
+                                <li class="fragment fade-up">Légèreté</li>
+                                <li class="fragment fade-up">Portabilité</li>
+                                <li class="fragment fade-up">Moins coûteux</li>
+                            </ul>
+                        </li>
+                        <li class="fragment fade-up">
+                            Inconvenients:
+                            <ul>
+                                <li class="fragment fade-up">Pas d'accès à certains capteurs (gyroscope,...)</li>
+                                <li class="fragment fade-up">Accès limité au GPS</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Développement Hybride</h2>
+                    <ul>
+                        <li class="fragment fade-up">Développer une application native</li>
+                        <li class="fragment fade-up">Baser sur le WEB</li>
+                        <li class="fragment fade-up">Utiliser outil de génération de code natif</li>
+                        <li class="fragment fade-up">Un base code traduit en code natif (Adroid,iOS)</li>
+                        <li class="fragment fade-up">Deux types de technologies:
+                            <ul>
+                                <li class="fragment fade-up">Webview</li>
+                                <li class="fragment fade-up">Application cross-platform</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Technologies Hybrides</h2>
+                    <div class="illustration-bg">
+                        <img src="../medias/mobile.png" alt="dev" />
+                    </div>
                 </section>
 
             </section>
@@ -654,10 +722,15 @@
                 <section>
                     <h1>Notion d'API</h1>
                     <ul>
-                        <li class="fragment fade-up">Application Programming Interface</li>
-                        <li class="fragment fade-up">Un moyen de faire dialoguer des applications</li>
-                        <li class="fragment fade-up">Producteur de service</li>
-                        <li class="fragment fade-up">Consommateur de service</li>
+                        <li class="fragment fade-up">Application - Programming - Interface</li>
+                        <li class="fragment fade-up">Faire dialoguer des applications</li>
+                        <li>
+                            Acteurs:
+                            <ul>
+                                <li class="fragment fade-up">Producteur de service</li>
+                                <li class="fragment fade-up">Consommateur de service</li>
+                            </ul>
+                        </li>
                         <li class="fragment fade-up">Interface de programmation
                             <ul>
                                 <li class="fragment fade-up">Accès services tiers</li>
@@ -766,7 +839,8 @@
                         </li>
                     </ul>
                 </section>
-                <section data-background-iframe="https://www.restapitutorial.com/httpstatuscodes.html"></section>
+                <section data-menu-title="Codes HTTP"
+                    data-background-iframe="https://www.restapitutorial.com/httpstatuscodes.html"></section>
                 <section>
                     <h2>Format d'échange(JSON) </h2>
                     <ul>
@@ -796,7 +870,7 @@
                     <ul>
                         <li class="fragment fade-up">Décrire API:
                             <ul>
-                                <li class="fragment fade-up"> Entrées attendues </li>
+                                <li class="fragment fade-up">Entrées attendues </li>
                                 <li class="fragment fade-up">Sorties à générer </li>
                                 <li class="fragment fade-up">Autorisations requises </li>
                                 <li class="fragment fade-up">... </li>
@@ -825,15 +899,17 @@
     <script src="../plugin/notes/notes.js"></script>
     <script src="../plugin/markdown/markdown.js"></script>
     <script src="../plugin/highlight/highlight.js"></script>
+    <script src="../node_modules/reveal.js-menu/menu.js"></script>
     <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
         // - https://revealjs.com/config/
         Reveal.initialize({
             hash: true,
+            slideNumber: true,
 
             // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu],
             dependencies: [
                 // Other plugins
                 {
@@ -843,6 +919,12 @@
                 { src: 'https://d3js.org/d3.v4.min.js', async: true, },
                 { src: '../node_modules/reveal.js-d3js/d3js.js' },
             ],
+            menu: {
+                themes: true,
+                themesPath: '../dist/theme/',
+                transitions: true,
+
+            }
         });
     </script>
 </body>
