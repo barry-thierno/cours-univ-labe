@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "label": "Farine",
+            "price": 3600,
+            "devise": "FG",
+            "unitOfMeasure": "Kg",
+            "category": "Denrée"
+        },
+        {
+            "id": 2,
+            "label": "Riz",
+            "price": 3700,
+            "devise": "FG",
+            "unitOfMeasure": "Kg",
+            "category": "Denrée"
+        },
+        {
+            "id": 3,
+            "label": "Tomate",
+            "price": 1500,
+            "devise": "FG",
+            "unitOfMeasure": "L",
+            "category": "Denrée"
+        }
+    ]
+}
