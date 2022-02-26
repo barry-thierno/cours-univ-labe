@@ -14,6 +14,7 @@
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="../plugin/pointer/pointer.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Gothic Coding">
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
 </head>
@@ -906,6 +907,7 @@
     <script src="../plugin/markdown/markdown.js"></script>
     <script src="../plugin/highlight/highlight.js"></script>
     <script src="../node_modules/reveal.js-menu/menu.js"></script>
+    <script src="../plugin/pointer/pointer.js"></script>
     <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
@@ -915,7 +917,7 @@
             slideNumber: true,
 
             // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu],
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealPointer],
             dependencies: [
                 // Other plugins
                 {
@@ -930,6 +932,13 @@
                 themesPath: '../dist/theme/',
                 transitions: true,
 
+            },
+            pointer: {
+                key: "q", // key to enable pointer, default "q", not case-sensitive
+                color: "chocolate", // color of a cursor, default "red" any valid CSS color
+                pointerSize: 30, // pointer size in px, default 12
+                alwaysVisible: false, // should pointer mode be always visible? default "false"
+                tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
             }
         });
     </script>
