@@ -28,7 +28,7 @@ export class CreateProductDto {
   @ApiProperty({
     required: true,
     type: 'string',
-    name: 'unit of measure',
+    name: 'unitOfMeasure',
     description: 'product unit of measure',
   })
   unitOfMeasure: string;
